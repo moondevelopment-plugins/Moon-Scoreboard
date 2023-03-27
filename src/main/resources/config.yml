@@ -1,0 +1,116 @@
+############################################################
+#                     Moon-Scoreboard                      #
+#                          Config                          #
+############################################################
+
+############################################################
+# SCOREBOARD
+############################################################
+SCOREBOARD:
+  ## CHANGING ANYTHING BELOW THIS LINE WILL NEED THE SERVER/PLUGIN TO BE RESTARTED ##
+
+  # Enable the SCOREBOARD?
+  ENABLED: true
+  # The title of the scoreboard
+  # NOTE: You can use color codes here
+  # NOTE: You can use the following placeholders:
+  #   %player% - The player's name
+  TITLE: "&3&lMoon-Scoreboard"
+  # The scoreboard line
+  SCOREBOARD_LINE: "&7&m----------------------"
+  LINES:
+    # NOTE: You can use color codes here
+    # NOTE: You can use the following placeholders:
+    #   %line% - The scoreboard line
+    #   %player% - The player's name
+    #   %online% - The amount of players online
+    #   %chat% - The player's chat mode
+    #   %vanish% - The player's vanish status
+    #
+    STAFF:
+      DEFAULT:
+        - "%line%"
+        - "&7» &3&lStaff Mode"
+        - " &bPlayers: &f%online%"
+        - " &bVanished: &f%vanish%"
+        - " &bChat: &f%chat%"
+        - "%line%"
+
+      # NOTE: You can use the following placeholders when KoTH is active:
+      #   %koth_name% - The name of the KoTH
+      #   %koth_time% - The time left in the KoTH
+      #   %koth_capper% - The player capping the KoTH
+      #   %koth_boost% - The KothBoost of the player capping the KoTH
+      KOTH:
+        - "&7» &3&lKoTH"
+        - " &bName: &f%koth_name%"
+        - " &bTime Left: &f%koth_time%"
+        - " &bCapper: &f%koth_capper%"
+        - " &bBoost: &f%koth_boost%"
+        - "%line%"
+
+      # NOTE: You can use the following placeholders when DTC is active:
+      #   %dtc_breaks% - The amount of breaks left in the DTC
+      #   %dtc_location% - The time left in the DTC
+      DTC:
+        - "&7» &3&lDTC"
+        - " &bBreaks Left: &f%dtc_breaks%"
+        - " &bLocation: &f%dtc_location%"
+        - "%line%"
+    # NOTE: You can use color codes here
+    # NOTE: You can use the following placeholders:
+    #   %line% - The scoreboard line
+    #   %player% - The player's name
+    #   %online% - The amount of players online
+    #   %claim% - The claim name of the location the player is in
+    #   %kills% - The amount of kills the player has
+    #   %deaths% - The amount of deaths the player has
+    #   %balance% - The player's balance
+    PLAYER:
+      NO_TIMER:
+        - "%line%"
+        - "&bClaim &7» &f%claim%"
+        - ""
+        - "&bKills &7» &f%kills%"
+        - "&bDeaths &7» &f%deaths%"
+        - "&bBalance &7» &f$%balance%"
+        - "%line%"
+
+      # NOTE: You can use color codes here
+      # LINES WILL BE AUTOMATICALLY ADDED
+      TIMER_ACTIVE:
+        DEFAULT:
+          - "&7» &3&lTimers"
+
+        # NOTE: You can use the following placeholders when KoTH is active:
+        #   %koth_name% - The name of the KoTH
+        #   %koth_time% - The time left in the KoTH
+        #   %koth_boost% - The KothBoost of the player (and the capper if applicable capping the KoTH)
+        KOTH:
+          - "&7» &3&lKoTH"
+          - " &bName: &f%koth_name%"
+          - " &bTime Left: &f%koth_time%"
+          - " &bBoost: &f%koth_boost%"
+
+        # NOTE: You can use the following placeholders when DTC is active:
+        #   %dtc_breaks% - The amount of breaks left in the DTC
+        #   %dtc_location% - The time left in the DTC
+        DTC:
+          - "&7» &3&lDTC"
+          - " &bBreaks Left: &f%dtc_breaks%"
+          - " &bLocation: &f%dtc_location%"
+
+        # NOTE: You can use color codes here
+        # NOTE: These are the default timers
+        # NOTE: These placeholders can't be used on any other timer
+        TIMERS:
+          REBOOT: "&4&lReboot &7» &f%time%"
+          SOTW: "&2&lSOTW &7» &f%time%"
+          EOTW: "&3&lEOTW &7» &f%time%"
+          PVPTIMER: "&c&lPvP Timer &7» &f%time%"
+          ENDERPEARL: "&9&lEnderpearl &7» &f%time%"
+          COMBAT: "&c&lCombat &7» &f%time%"
+          SPAWN: "&a&lSpawn &7» &f%time%"
+          HOME: "&6&lHome &7» &f%time%"
+          LOGOUT: "&4&lLogout &7» &f%time%"
+          STUCK: "&4&lStuck &7» &f%time%"
